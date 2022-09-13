@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+bool checkPerfect(int no)
+{
+	int i = 0;
+	int sum = 0;
+
+	while (i++ < no)
+	{
+		if (no % i == 0 && i < no)
+		{
+			sum += i;
+		}
+	}
+
+	return sum == no;
+}
+
+int main()
+{
+	int n;
+
+	cout << "Enter a number : " << endl; cin >> n;
+
+	if (checkPerfect(n))
+	{
+		cout << "It is a perfect number" << endl;
+	}
+	else
+	{
+		cout << "It is not a perfect number" << endl;    
+	}
+
+	return 0;
+} 
