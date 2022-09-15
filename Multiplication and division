@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num, i, res,choice;
+    cout<<"enter the number:";
+    cin>>num;
+    cout<<"enter the choice 1.multiplication and 2.division=";
+    cin>>choice;
+    if(choice==1)
+        for(i=1; i<=10; i++)
+        {
+            res = num*i;
+            cout<<num<<" * "<<i<<" = "<<res;
+            cout<<endl;
+        }
+    else if(choice==2)
+        for(i=1; i<=10; i++)
+        {
+            float(res)= num/i;
+            cout<<num<<" % "<<i<<" = "<<float(res);
+            cout<<endl;
+        }
+    else
+    {
+        cout<<"enter 1 or 2 only:";
+    }
+    return 0;
+}
