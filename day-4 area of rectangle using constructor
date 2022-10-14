@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Area
+{
+public:
+    int length;
+    int breadth;
+    void setDim(int l, int b)
+    {
+        length = l;
+        breadth = b;
+    }
+    int getArea()
+    {
+        return length*breadth;
+    }
+};
+
+int main()
+{
+    Area a;
+    a.setDim(4,5);
+    cout << a.getArea() << endl;
+    return 0;
+}
